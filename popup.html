@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yelp Review Overlay</title>
+  <style>
+    body {
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Yelp Reviews</h3>
+  <button id="show-reviews">Show Reviews</button>
+  <script>
+    document.getElementById('show-reviews').addEventListener('click', () => {
+      chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+        chrome.scripting.executeScript({
+          target: { tabId: tabs[0].id },
+          function: displayYelpReviews
+        });
+      });
+    });
+  </script>
+</body>
+</html>
