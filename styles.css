@@ -1,0 +1,28 @@
+.yelp-reviews-overlay {
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  background: white;
+  border: 2px solid black;
+  padding: 10px;
+  z-index: 10000;
+}
+
+.yelp-review {
+  margin-bottom: 10px;
+}
+
+.yelp-review-button {
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  z-index: 10000;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
