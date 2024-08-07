@@ -3,7 +3,7 @@ const businessName = 'Business Name'; // Replace with the business name you want
 
 // Function to fetch Yelp reviews
 async function fetchYelpReviews(businessName) {
-  const response = await fetch(`https://api.yelp.com/v3/businesses/search?term=${businessName}&location=San Francisco`, {
+  const response = await fetch(`https://api.yelp.com/v3/businesses/search?term=${businessName}&location=India`, {
     headers: {
       Authorization: `Bearer ${apiKey}`
     }
